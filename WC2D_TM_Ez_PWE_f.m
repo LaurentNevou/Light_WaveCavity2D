@@ -136,7 +136,7 @@ psik=psik(:,idx);
 % here is a small patch due to differences between Octave and Matlab
 % Matlab order the eigen values while Octave reverse it
 
-if f0_z(2)<f0_z(1)
+if real(f0_z(end))<real(f0_z(1))
   psik=psik(:,end:-1:1);
   f0_z=f0_z(end:-1:1);
 end
