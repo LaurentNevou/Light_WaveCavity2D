@@ -31,20 +31,20 @@ eps=n.^2;
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%figure('Name','Optical index','position',[10 -100 1000 700])
+figure('Name','Optical index','position',[10 -100 1000 700])
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%subplot(1,1,1,'fontsize',15)
-%hold on;grid on;
+subplot(1,1,1,'fontsize',15)
+hold on;grid on;
 
-%pcolor(x*1e6,y*1e6,abs(squeeze(n)))
+pcolor(x*1e6,y*1e6,abs(squeeze(n)))
 
-%colormap(cool)
-%colorbar
+colormap(jet)
+colorbar
 
 %xlim([-1 1]*Dx/2*1e6)
 %ylim([-1 1]*Dz/2*1e6)
 
-%xlabel('x (um)')
-%ylabel('y (um)')
+xlabel('x (um)')
+ylabel('y (um)')
